@@ -1,23 +1,26 @@
 import {
     Column,
     Entity,
-    PrimaryGeneratedColumn
+    PrimaryColumn,
+    PrimaryGeneratedColumn,
+    ObjectID,
+    ObjectIdColumn
 } from "typeorm";
 
+@Entity()
 export class Supply {
-    @PrimaryGeneratedColumn()
-    id: number;
+    @ObjectIdColumn()
+    id: ObjectID;
 
-    @Column()
+    @Column({ unique: true })
     name: string;
 
     @Column()
     price: number;
 
-    @Column()
+    @Column({ nullable: true })
     type: string;
 
-    @Column()
+    @Column({ nullable: true })
     description: string;
-
 }

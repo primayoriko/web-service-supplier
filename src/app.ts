@@ -2,7 +2,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 import { createConnection, Connection } from "typeorm";
 
-import supplyRoutes from 'routes/supply.route';
+import supplyRoutes from './routes/supply';
 
 class App {
     public app: express.Application;
@@ -12,14 +12,14 @@ class App {
 
     async create(){
         try{
-            // await this.connectDB(this).then((app: App)  => {
-            //     app.app = express();
-            //     app.config();
-            // })
             this.connection = await createConnection();
             this.app = express();
             this.setConfigs();
             this.setRoutes();
+            // await this.connectDB(this).then((app: App)  => {
+            //     app.app = express();
+            //     app.config();
+            // })
         } catch (err) {
             throw err;
         }
