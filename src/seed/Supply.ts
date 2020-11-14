@@ -1,4 +1,5 @@
 // import { Supply } from "../entity/Supply";
+
 export const supplySeed = [
     {
         name: "mentega",

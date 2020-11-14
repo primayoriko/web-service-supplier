@@ -3,19 +3,19 @@ function getConfig() {
 		"synchronize": true,
 		"logging": false,
 		"entities": [
-			"src/entity/*.ts"
+			"src/entity/**/*.ts"
 		],
 		"migrations": [
-			"src/migration/*.ts"
+			"src/migration/**/*.ts"
 		],
 		"subscribers": [
-			"src/subscriber/*.ts"
+			"src/subscriber/**/*.ts"
 		],
 		"seeds": [
-			'src/seed/*{.ts,.js}'
+			'src/seed/**/*{.ts,.js}'
 		],
 		"factories": [
-			'src/factory/*{.ts,.js}'
+			'src/factory/**/*{.ts,.js}'
 		],
 		"cli": {
 			"entitiesDir": "src/entity",
@@ -31,16 +31,6 @@ function getConfig() {
 		insecureAuth : true,
 		...config
 	}
-	// return {
-	// 	"type": "mysql",
-	// 	"host": "localhost",
-	// 	"port": 3306,
-	// 	"username": "root",
-	// 	"password": "root",
-	// 	"database": "ws_service",
-	// 	"insecureAuth" : true,
-	// 	...config
-  	// }
 }
 
 module.exports = getConfig();

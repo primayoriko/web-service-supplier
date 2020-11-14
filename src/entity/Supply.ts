@@ -1,15 +1,13 @@
 import {
     Column,
     Entity,
-    PrimaryColumn,
-    PrimaryGeneratedColumn,
     ObjectID,
     ObjectIdColumn
 } from "typeorm";
 
 @Entity()
 export class Supply {
-    @ObjectIdColumn()
+    @ObjectIdColumn({ select: false })
     id: ObjectID;
 
     @Column({ unique: true })

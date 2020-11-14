@@ -3,14 +3,17 @@ import { Request, Response, Router } from "express";
 import { SupplyController } from '../controller/SupplyController';
 
 export default () => {
-    const router = Router();
-    const supplyController = new SupplyController();
+	const router = Router();
+	const supplyController = new SupplyController();
 
-    router.get('', [], 
-            supplyController.getSupplyList.bind(supplyController));
+	router.get('/api/supply', [],
+		supplyController.getSupplyList.bind(supplyController));
 
-    router.get('', [],
-            supplyController.checkTransaction.bind(supplyController));
+	router.get('/api/supply/withprice', [],
+		supplyController.getSupplyListWithPrice.bind(supplyController));
 
-    return router;
+	router.get('', [], 
+		supplyController.checkTransaction.bind(supplyController));
+
+	return router;
 }
