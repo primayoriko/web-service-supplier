@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import supply from "routes/supply";
 import { getMongoRepository, getMongoManager } from "typeorm";
 
 import { Supply } from '../entity/Supply';
@@ -13,6 +12,10 @@ export class SupplyController {
     }
 
     async getSupplyList(req: Request, res: Response, withoutPrice: boolean = true): Promise<Response>{
+        // const select  = [ "name" ];
+        // if(!withoutPrice){ 
+        //     select.push("price");
+        // }
         const results = await this.supplyRepository.find();
 
         const supplies = [];
