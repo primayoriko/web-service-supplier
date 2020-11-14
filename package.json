@@ -2,7 +2,7 @@
   "name": "ws-supplier",
   "version": "1.0.0",
   "description": "web service for supplier in wangky web system",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
     "dev": "ts-node ./src/server.ts",

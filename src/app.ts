@@ -1,8 +1,8 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-// import {createConnection, Connection} from "typeorm";
 import { createConnection, Connection } from "typeorm";
 
+import supplyRoutes from 'routes/supply.route';
 
 class App {
     public app: express.Application;
@@ -18,18 +18,23 @@ class App {
             // })
             this.connection = await createConnection();
             this.app = express();
-            this.config();
+            this.setConfigs();
+            this.setRoutes();
         } catch (err) {
             throw err;
         }
     }
 
-    private config(): void{
+    private setConfigs(): void{
         // support application/json type post data
         this.app.use(bodyParser.json());
 
         //support application/x-www-form-urlencoded post data
         this.app.use(bodyParser.urlencoded({ extended: false }));
+    }
+
+    private setRoutes(): void{
+        this.app.use(supplyRoutes());
     }
 
     // private async connectDB(app: App) {
