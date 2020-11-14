@@ -5,17 +5,8 @@ function getConfig() {
 		"entities": [
 			"src/entity/**/*.ts"
 		],
-		"migrations": [
-			"src/migration/**/*.ts"
-		],
-		"subscribers": [
-			"src/subscriber/**/*.ts"
-		],
 		"seeds": [
 			'src/seed/**/*{.ts,.js}'
-		],
-		"factories": [
-			'src/factory/**/*{.ts,.js}'
 		],
 		"cli": {
 			"entitiesDir": "src/entity",

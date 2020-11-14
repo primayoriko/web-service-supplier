@@ -2,7 +2,8 @@ import {
     Column,
     Entity,
     ObjectID,
-    ObjectIdColumn
+    ObjectIdColumn,
+    ObjectType
 } from "typeorm";
 
 @Entity()
@@ -21,4 +22,7 @@ export class Supply {
 
     @Column({ nullable: true })
     description: string;
+
+    @Column({ nullable: true })
+    other: Object;
 }
