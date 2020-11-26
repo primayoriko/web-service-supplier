@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import { getMongoRepository, getMongoManager } from "typeorm";
+import { getRepository, getManager } from "typeorm";
 
 import { Supply } from '../entity/Supply';
 
 export class SupplyController {
-    private supplyRepository = getMongoRepository(Supply);
+    private supplyRepository = getRepository(Supply);
 
     async checkTransaction(req : Request, res: Response): Promise<Response>{
         /* Add here handler */

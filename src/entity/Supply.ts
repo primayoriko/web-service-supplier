@@ -1,17 +1,17 @@
 import {
     Column,
     Entity,
-    ObjectID,
-    ObjectIdColumn,
-    ObjectType
+    PrimaryColumn
+    // ObjectID,
+    // ObjectIdColumn,
+    // ObjectType
 } from "typeorm";
 
 @Entity()
 export class Supply {
-    @ObjectIdColumn({ select: false })
-    id: ObjectID;
-
-    @Column({ unique: true })
+    // @ObjectIdColumn({ select: false })
+    // id: ObjectID;
+    @PrimaryColumn()
     name: string;
 
     @Column()
@@ -22,7 +22,4 @@ export class Supply {
 
     @Column({ nullable: true })
     description: string;
-
-    @Column({ nullable: true })
-    other: Object;
 }

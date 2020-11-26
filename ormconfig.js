@@ -15,10 +15,12 @@ function getConfig() {
 		}
 	}
 	return {
-		type: "mongodb",
+		type: "postgres",
 		host: "localhost",
-		port: 27017,
-		database: "ws_service",
+		port: 5432,
+		username: "postgres",
+		password: "root",
+		database: "ws_supplier",
 		insecureAuth : true,
 		...config
 	}

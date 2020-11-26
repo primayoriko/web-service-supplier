@@ -1,4 +1,4 @@
-import { getMongoRepository, getMongoManager, createConnection, Connection } from "typeorm";
+import { getRepository, getManager, createConnection, Connection } from "typeorm";
 
 import { Supply } from '../entity/Supply';
 import { supplySeed } from './Supply';
@@ -7,9 +7,9 @@ async function seedData(){
     try {
         const connection: Connection = await createConnection();
 
-        // await connection.mongoManager.save(supplySeed);
+        // await connection.Manager.save(supplySeed);
 
-        const supplyRepository = getMongoRepository(Supply);
+        const supplyRepository = getRepository(Supply);
 
         await supplyRepository.save(supplySeed);
 

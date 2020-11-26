@@ -36,7 +36,7 @@ Database Info
 3. ad
 4. asd
 
-## Known Issue
+## Known Issues
 
 -------
 
@@ -45,7 +45,7 @@ Database Info
 3. sad
 4. sad
 
-## Division of Task
+## Division of Tasks
 
 -------
 
