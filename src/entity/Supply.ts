@@ -1,8 +1,8 @@
 import {
     Column,
     Entity,
-    PrimaryColumn,
     PrimaryGeneratedColumn,
+    // PrimaryColumn,
     // ObjectID,
     // ObjectIdColumn,
     // ObjectType
