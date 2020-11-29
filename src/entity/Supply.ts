@@ -11,6 +11,9 @@ import {
 export class Supply {
     // @ObjectIdColumn({ select: false })
     // id: ObjectID;
+    // @PrimaryColumn()
+    // id: number;
+
     @PrimaryColumn()
     name: string;
 

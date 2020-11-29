@@ -3,14 +3,16 @@
 ## Description
 
 -------
-Add here
+Merupakan layanan daring (Web service) yang menyediakan kebutuhan dalam penyediaan informasi serta jual beli bahan baku yang dapat digunakan dalam rantai suplai pembuatan coklat Willy Wangky.
 
 ## Database
 
 -------
-Database Info
+Hanya terdapat satu tabel pada database WS-Supplier:
 
-## Requirements
+![db_info](docs/images/db_info.png)
+
+<!-- ## Requirements
 
 -------
 
@@ -43,12 +45,17 @@ Database Info
 1. sad
 2. sad
 3. sad
-4. sad
+4. sad -->
 
 ## Division of Tasks
 
 -------
 
-1. Task1: NIM1, ..
-2. dst
-3. dst
+1. Setup Project: 13518146
+2. Database: 13518146
+3. Model: 13518146, 13518135
+4. Seed: 13518146
+5. Controller + Route:
+   - List Data: 13518146
+   - Verifikasi: 13518135
+6. Testing: 13518146, 13518125, 13518135
