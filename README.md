@@ -14,7 +14,7 @@ Hanya terdapat satu tabel pada database WS-Supplier:
 
 ![db_info](./docs/db_info.PNG)
 
-## Division of Tasks
+## Division of Tasks: REST
 
 ---
 
