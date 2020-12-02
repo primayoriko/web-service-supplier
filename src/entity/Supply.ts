@@ -1,7 +1,8 @@
 import {
     Column,
     Entity,
-    PrimaryColumn
+    PrimaryGeneratedColumn,
+    // PrimaryColumn,
     // ObjectID,
     // ObjectIdColumn,
     // ObjectType
@@ -11,10 +12,17 @@ import {
 export class Supply {
     // @ObjectIdColumn({ select: false })
     // id: ObjectID;
+<<<<<<< HEAD
     // @PrimaryColumn()
     // id: number;
 
     @PrimaryColumn()
+=======
+    @PrimaryGeneratedColumn()
+    id: number;
+    
+    @Column()
+>>>>>>> b221111409eb4b178e8dd96b2dbb7e9a909c0bb1
     name: string;
 
     @Column()

@@ -7,6 +7,22 @@ export const supplySeed = [
     },
     {
         name: "kacang",
-        price: 9999
+        price: 10000
+    },
+    {
+        name: "susu",
+        price: 8000
+    },
+    {
+        name: "vanilla",
+        price: 15000
+    },
+    {
+        name: "moka",
+        price: 15000
+    },
+    {
+        name: "garam",
+        price: 5000
     },
 ]

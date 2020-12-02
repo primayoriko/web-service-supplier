@@ -12,7 +12,7 @@ export default () => {
 	router.get('/api/supply/withprice', [],
 		supplyController.getSupplyListWithPrice.bind(supplyController));
 
-	router.get('', [], 
+	router.post('/api/check', [], 
 		supplyController.checkTransaction.bind(supplyController));
 
 	return router;
